@@ -26,13 +26,23 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
+    React is a response to the need for a way to make broad changes across a variety of surfaces while minimizing unwanted sid effects and glitches, as well as minimize javascript fatigue.
+
 - [ ] What does it mean to _think_ in react?
+
+    Medication is in order.
 
 - [ ] Describe state.
 
+    In a simple manner, state is the current value of any given element. 
+
 - [ ] Describe props.
 
+    Props are values of the current state that are passed to functions.
+
 - [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
+
+    Side effects are changes to state that are not a result of the direct intent of an action.
 
 ## Project Set Up
 

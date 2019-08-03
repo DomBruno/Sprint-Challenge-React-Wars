@@ -11,6 +11,8 @@ const App = () => {
   // side effect in a component, you want to think about which state and/or props it should
   // sync up with, if any.
 
+  // Also thanks to Ben who showed me the key={cv} thing a few lessons back; still no clue how it works but it's shorter than my crazy foreachs and shit
+
   const [charState, setCharState] = useState({});
 
   useEffect(() => {
