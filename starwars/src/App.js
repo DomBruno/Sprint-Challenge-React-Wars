@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./index.css";
 import axios from "axios";
-import PeopleCard from "./components/PeopleCard.js";
+import CharCard from "./components/CharCard.js";
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -11,13 +11,13 @@ const App = () => {
   // side effect in a component, you want to think about which state and/or props it should
   // sync up with, if any.
 
-  const [peopleState, setPeopleState] = useState({});
+  const [charState, setCharState] = useState({});
 
   useEffect(() => {
     axios
       .get("https://swapi.co/api/people/")
       .then(response => {
-        setPeopleState(response.data.results);
+        setCharState(response.data.results);
       })
       .catch(error => {
         console.log("error", error);
@@ -27,8 +27,8 @@ const App = () => {
   return (
     <div className="App">
       <h1 className="Header">React Wars</h1>
-      {Object.keys(peopleState).map(cv => {
-        return <PeopleCard data={peopleState[cv]} key={cv} />;
+      {Object.keys(charState).map(cv => {
+        return <CharCard data={charState[cv]} key={cv} />;
       })}
     </div>
   );
