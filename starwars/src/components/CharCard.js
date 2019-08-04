@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Header, Segment } from 'semantic-ui-react';
+import { Container, Header, Segment, Divider, Icon } from 'semantic-ui-react';
 import 'semantic-ui-css/semantic.min.css'; 
 
 const CharCard = props => {
@@ -18,6 +18,7 @@ const CharCard = props => {
           <Segment>Weight: {props.data.mass}kg</Segment>
           </Segment.Group>
         </Container>
+        <Divider horizontal><Icon color='red' name='rebel'/></Divider>
     </>
   );
 };
